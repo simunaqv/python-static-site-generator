@@ -11,7 +11,7 @@ class Site:
         self.source = Path(source)
         self.dest = Path(dest)
 
-    def creat_dir(self, path):
+    def create_dir(self, path):
         directory = self.dest / self.source.relative_to()
         mkdir(directory, parents= True, exist_ok= True)
 
